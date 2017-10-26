@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Insert title here</title>
+<title>WCCI Restaurant Reviews</title>
 </head>
 <body>
+	<!-- Header -->
+	<header>
+		<h1>WCCI Restaurant Reviews</h1>
+	</header>
+
+	<div th:each="reviews: ${modelAllRestaurant}" class="title-content">
+		<h2>
+			<a th:href="@{/restaurant(id=${reviews.id})}"
+				th:text="${reviews.getTitle()}"></a>
+		</h2>
+		<img th:src="${reviews.getImage()}" class="content"></img>
+		
+		
+		
+		
+		
+	</div>
 
 
-<ul>
-<li th:each="restaurant: ${modelAllRestaurant}" th:text="${restaurant.name}"/>
-</ul>
+
+
+
 </body>
 </html>
