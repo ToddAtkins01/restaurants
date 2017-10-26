@@ -8,6 +8,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class RestaurantControler {
@@ -16,9 +17,9 @@ public class RestaurantControler {
 	private ReviewRepository reviews;
 
 	@RequestMapping("/restaurant")
-	public String showRestaurant(Model model) {
+	public String showRestaurant(@RequestParam("id") long id, Model model) {
 
-		model.addAttribute("modelRestaurant", restaurant);
+		model.addAttribute("modelRestaurant", reviews.findOne(id));
 		return "restaurant-template";
 
 	}

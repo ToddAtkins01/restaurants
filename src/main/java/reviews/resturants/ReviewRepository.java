@@ -19,21 +19,14 @@ public class ReviewRepository {
 
 		reviews.put(10000000000000001L, restaurant);
 
-		// Review restaurant1 = new Review(10000000000000002L, "J. Alexander's", " ",
-		// "American", null, null, null, null);
-		// Review restaurant2 = new Review(10000000000000003L, "Chile Verde", " ",
-		// "Mexican", null, null, null, null);
-		// Review restaurant3 = new Review(10000000000000004L, "Condado Taco's", " ",
-		// "Mexican", null, null, null, null);
-		// Review restaurant4 = new Review(10000000000000005L, "Outback Steak House", "
-		// ", "American", null, null, null,
-		// null);
-		// Review restaurant5 = new Review(10000000000000006L, "Buci Di Bepo", " ",
-		// "American", null, null, null, null);
-		// Review restaurant6 = new Review(10000000000000007L, "Sushi Time", " ",
-		// "Asian", null, null, null, null);
-		// Review restaurant7 = new Review(10000000000000008L, "House of Japan", " ",
-		// "Asian", null, null, null, null);
+		Review restaurant1 = new Review(10000000000000002L, "J. Alexander's", " ", "American", null, null, null, null);
+		Review restaurant2 = new Review(10000000000000003L, "Chile Verde", " ", "Mexican", null, null, null, null);
+		Review restaurant3 = new Review(10000000000000004L, "Condado Taco's", " ", "Mexican", null, null, null, null);
+		Review restaurant4 = new Review(10000000000000005L, "Outback Steak House", " ", "American", null, null, null,
+				null);
+		Review restaurant5 = new Review(10000000000000006L, "Buci Di Bepo", " ", "American", null, null, null, null);
+		Review restaurant6 = new Review(10000000000000007L, "Sushi Time", " ", "Asian", null, null, null, null);
+		Review restaurant7 = new Review(10000000000000008L, "House of Japan", " ", "Asian", null, null, null, null);
 
 	}
 
@@ -43,7 +36,7 @@ public class ReviewRepository {
 		return reviews.values();
 	}
 
-	public Collection<Review> findOne(id) {
+	public Collection<Review> findOne(Long id) {
 		return reviews.values();
 
 	}
