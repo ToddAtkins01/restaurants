@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title th:text="'Restaurant: '+ ${modelRestaurant.getTitle()}"></title>
 </head>
 
 <body>
-	
+
 	<!-- Header -->
 	<header>
 		<h1>WCCI Restaurant Reviews</h1>
@@ -15,19 +15,31 @@
 
 	<div id="container">
 
-	
+
 
 		<!-- h2 -->
 
 		<h2>Columbus Restaurants</h2>
-		
-		<p th:text="${modelRestaurant.getTitle()}" />
-		<p th:text="${modelRestaurant.getAddress()}" />
 
-
-
+		<p id="Title" th:text="${modelRestaurant.getTitle()}" />
+		<p id="Review Category"
+			th:text="${modelRestaurant.getReviewCategory()}" />
+		<p id="Phone Number" th:text="${modelRestaurant.getPhoneNumber()}" />
+		<p id="Address" th:text="${modelRestaurant.getAddress()}" />
+		<p id="HOO" th:text="${modelRestaurant.getHoursOfOperation()}" />
+		<p id="Content" th:text="${modelRestaurant.getContent()}" />
+		<img id="Image" th:src="${modelRestaurant.getImage()}" class="content"></img>
+		<p>
+			<a id="Go Back" th:href="@{/allRestaurant}"> Go Home </a>
+		</p>
 	</div>
 
 </body>
+
+<footer>
+	<p>Created by C&amp;T 	&#169;2017 all information and comments are not real
+		and are for demo purpose only</p>
+</footer>
+
 
 </html>
