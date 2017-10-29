@@ -9,7 +9,9 @@ public class Review {
 	private String content;
 	private String phoneNumber;
 	private String address;
-	private String hoursOfOperation;
+	private String hoursOfOperationA;
+	private String hoursOfOperationB;
+	private String hoursOfOperationC;
 
 	public long getId() {
 		return id;
@@ -31,8 +33,16 @@ public class Review {
 		return address;
 	}
 
-	public String getHoursOfOperation() {
-		return hoursOfOperation;
+	public String getHoursOfOperationA() {
+		return hoursOfOperationA;
+	}
+
+	public String getHoursOfOperationB() {
+		return hoursOfOperationB;
+	}
+
+	public String getHoursOfOperationC() {
+		return hoursOfOperationC;
 	}
 
 	public String getTitle() {
@@ -44,7 +54,7 @@ public class Review {
 	}
 
 	public Review(long id, String title, String image, String reviewCategory, String content, String phoneNumber,
-			String address, String hoursOfOperation) {
+			String address, String hoursOfOperationA, String hoursOfOperationB, String hoursOfOperationC) {
 		this.id = id;
 		this.title = title;
 		this.image = image;
@@ -52,7 +62,9 @@ public class Review {
 		this.content = content;
 		this.phoneNumber = phoneNumber;
 		this.address = address;
-		this.hoursOfOperation = hoursOfOperation;
+		this.hoursOfOperationA = hoursOfOperationA;
+		this.hoursOfOperationB = hoursOfOperationB;
+		this.hoursOfOperationC = hoursOfOperationC;
 	}
 
 }
