@@ -38,7 +38,7 @@ public class ReviewRepository {
 		Review restaurant4 = new Review(4L, "Outback Steakhouse", "/images/OutbackSteakhouse.jpg", "American",
 				"Outback has been one of favorite for years, but a sign on the door may change that. My ribeye was was cooked perfect to the point that the knife wasn't hardly needed. The salads were large and fresh and the bread was fresh. My problem is a new sign saying no firearms allowed. If this is a store by store decision, I guess I will have to find a new favorite restaurant",
 				"614-755-9926", "6000 E Main St, Columbus, OH 43213",
-				"Monday to Thursday: 11AM–10PM \r\n" + " Friday to Saturday: 11AM-11PM \r\n" + "Sunday: 11AM-9PM");
+				"Monday to Thursday: 11AM–10PM \r\n" + " Friday to Saturday: 11AM-11PM \n" + "Sunday: 11AM-9PM");
 		reviews.put(4L, restaurant4);
 
 		Review restaurant5 = new Review(5L, "Buci Di Bepo", "/images/BuciDiBepo.jpg", "Italian",

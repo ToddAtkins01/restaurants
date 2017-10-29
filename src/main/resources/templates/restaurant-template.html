@@ -4,6 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title th:text="'Restaurant: '+ ${modelRestaurant.getTitle()}"></title>
+<link rel="stylesheet" type="text/css" href="/index.css"></link>
 </head>
 
 <body>
@@ -13,32 +14,34 @@
 		<h1>WCCI Restaurant Reviews</h1>
 	</header>
 
-	<div id="container">
+	<div id="container-single">
 
 
 
 		<!-- h2 -->
 
-		<h2>Columbus Restaurants</h2>
+		<h2 id="Title-single" th:text="${modelRestaurant.getTitle()}"></h2>
 
-		<p id="Title" th:text="${modelRestaurant.getTitle()}" />
-		<p id="Review Category"
-			th:text="${modelRestaurant.getReviewCategory()}" />
-		<p id="Phone Number" th:text="${modelRestaurant.getPhoneNumber()}" />
-		<p id="Address" th:text="${modelRestaurant.getAddress()}" />
-		<p id="HOO" th:text="${modelRestaurant.getHoursOfOperation()}" />
-		<p id="Content" th:text="${modelRestaurant.getContent()}" />
-		<img id="Image" th:src="${modelRestaurant.getImage()}" class="content"></img>
-		<p>
-			<a id="Go Back" th:href="@{/allRestaurant}"> Go Home </a>
-		</p>
+		<div id="ReviewCategory-single"
+			th:text="${modelRestaurant.getReviewCategory() + ' Restaurant'}"></div>
+		<div id="PhoneNumber-single"
+			th:text="${modelRestaurant.getPhoneNumber()}"></div>
+		<div id="Address-single" th:text="${modelRestaurant.getAddress()}"></div>
+		<div id="HOO-single"
+			th:text="${modelRestaurant.getHoursOfOperation()}"></div>
+		<div id="Content-single" th:text="${modelRestaurant.getContent()}"></div>
+		<img id="Image-single" th:src="${modelRestaurant.getImage()}"
+			class="content"></img>
+		<div id="GoHome-single">
+			<a th:href="@{/allRestaurant}"> Go Home </a>
+		</div>
 	</div>
 
 </body>
 
 <footer>
-	<p>Created by C&amp;T 	&#169;2017 all information and comments are not real
-		and are for demo purpose only</p>
+	<p>Created by C&amp;T &#169;2017 all information and comments are
+		not real and are for demo purpose only</p>
 </footer>
 
 

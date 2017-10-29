@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>WCCI Restaurant Reviews</title>
+<link rel="stylesheet" type="text/css" href="/index.css"></link>
 </head>
 <body>
 	<!-- Header -->
 	<header>
 		<h1>WCCI Restaurant Reviews</h1>
 	</header>
-
+		<div id="container-all">
+	
 	<div th:each="reviews: ${modelAllRestaurant}" class="title-content">
 		<h2>
 			<a th:href="@{/restaurant(id=${reviews.id})}"
@@ -24,6 +28,7 @@
 
 
 
+</div>	
 
 
 </body>
@@ -31,5 +36,4 @@
 	<p>Created by C&amp;T &#169;2017 all information and comments are
 		not real and are for demo purpose only</p>
 </footer>
-
 </html>

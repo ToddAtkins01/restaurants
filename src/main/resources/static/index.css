@@ -1,0 +1,102 @@
+/* CSS comments look like this. You can also hit Ctrl+/ in codepen to comment out selected code.
+
+You may want to try commenting out bits below to see how the layout changes. */
+body {
+	background-color: rgb(188, 194, 211);
+	border: solid 2px green;
+}
+
+header {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	border: solid 2px black;
+}
+
+h1 {
+	grid-column: 2/8;
+	grid-row: 1/2;
+	text-shadow: 2px 2px rgb(220, 223, 232);
+	font-size: 300%;
+	width: 100%;
+	text-align: center;
+	border: solid 2px blue;
+}
+
+#container-single {
+	display: grid;
+	grid-template-columns: 200px 1fr 1fr 1fr 200px;
+	grid-template-rows: repeat(4, auto) 50px repeat(3, auto);
+	grid-template-areas: 
+	". h2 h2 h2 ." 
+	". ReviewCategory-single ReviewCategory-single ReviewCategory-single ."
+	". PhoneNumber-single HOO-single . ." 
+	". Address-single . . ." 
+	". . . . ."
+	". Content-single Content-single Content-single ." 
+	". Image-single Image-single Image-single ." 
+	". . GoHome-single . .";
+	border: solid 2px yellow;
+}
+
+#container-all {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: auto 400px;
+	padding: 1;
+	border: solid 2px red;
+}
+
+h2 {
+	grid-area: h2;
+	text-shadow: 2px 2px rgb(188, 194, 211);
+	font-size: 50px;
+	width: 100%;
+	text-align: center;
+	color: black;
+	border: solid 2px pink;
+	text-shadow: 2px 2px rgb(188, 194, 211);
+}
+
+#ReviewCategory-single {
+	grid-area: ReviewCategory-single;
+	border: solid 2px white;
+}
+
+#PhoneNumber-single {
+	grid-area: PhoneNumber-single;
+	border: solid 2px grey;
+}
+
+#Address-single {
+	grid-area: Address-single;
+	border: solid 2px orange;
+}
+
+#HOO-single {
+	grid-area: HOO-single;
+	border: solid 2px brown;
+}
+
+#Content-single {
+	grid-area: Content-single;
+	border: solid 2px red;
+}
+
+#Image-single {
+	width: 80%;
+	hight: auto;
+	grid-area: Image-single;
+	border: solid 2px #ff0080;
+	grid-area: Image-single;
+	justify-self: center;
+}
+
+#GoHome-single {
+	grid-area: GoHome-single;
+	border: solid 2px #408080;
+}
+
+footer {
+	text-align: center;
+}
