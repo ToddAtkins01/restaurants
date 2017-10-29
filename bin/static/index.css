@@ -30,9 +30,9 @@ h1 {
 	grid-template-areas: 
 	". h2 h2 h2 ." 
 	". ReviewCategory-single ReviewCategory-single ReviewCategory-single ."
-	". PhoneNumber-single HOO-single . ." 
-	". Address-single . . ." 
-	". . . . ."
+	". PhoneNumber-single . HOOA-single  ." 
+	". Address-single . HOOB-single ." 
+	". . . HOOC-single ."
 	". Content-single Content-single Content-single ." 
 	". Image-single Image-single Image-single ." 
 	". . GoHome-single . .";
@@ -74,7 +74,16 @@ h2 {
 }
 
 #HOOA-single {
-	grid-area: HOO-single;
+	grid-area: HOOA-single;
+	border: solid 2px #80ff80;
+}
+
+#HOOB-single {
+	grid-area: HOOB-single;
+	border: solid 2px #e798e4;
+}
+#HOOC-single {
+	grid-area: HOOC-single;
 	border: solid 2px brown;
 }
 
