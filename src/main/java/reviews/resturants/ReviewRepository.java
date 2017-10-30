@@ -11,15 +11,15 @@ public class ReviewRepository {
 
 	public ReviewRepository() {
 
-		Review restaurant = new Review(0L, "Bravo Cucina Italiana", "/images/BravoCrosswoods.jpg", "Italian",
-				"Bring your appetite and your zest for life to our BRAVO Cucina Italiana Italian Restaurant at our Crosswoods location, and you can experience your own little slice of Italy right here in Columbus Ohio. Enjoy traditional classics with a twist in an elegant, family-friendly setting that's perfect for any occasion. It's all right here waiting at BRAVO Cucina Italiana, the best Italian Restaurant in Columbus.",
-				"(614) 888-3881", "7470 Vantage Drive\r\n" + "Columbus, OH 43235", "Mon-Thu: 11:30am - 9:30pm",
-				"Fri-Sat: 11:30am - 10:00pm", "Sun: 11:00am - 9:00pm");
+		Review restaurant = new Review(0L, "Outback Steakhouse", "/images/OutbackSteakhouse.jpg", "American",
+				"Outback has been one of favorite for years, but a sign on the door may change that. My ribeye was was cooked perfect to the point that the knife wasn't hardly needed. The salads were large and fresh and the bread was fresh. My problem is a new sign saying no firearms allowed. If this is a store by store decision, I guess I will have to find a new favorite restaurant",
+				"614-755-9926", "6000 E Main St, Columbus, OH 43213", "Mon-Thu: 11:00am – 10:00pm",
+				" Fri-Sat: 11:00am - 11:00pm", "Sun: 11:00am-  9:00pm");
 
 		reviews.put(0L, restaurant);
 
 		Review restaurant1 = new Review(1L, "J. Alexander's", "/images/J.Alexanders.jpg", "American",
-				"Our Company was founded in 1991 by our current CEO, Lonnie Stout, and our Chief Operating Officer, Mike Moore. Our goal has always been to be a chef-driven, boutique-style restaurant emphasizing high-quality food and professional service. We selected several of our flagship locations to transition into Redlands Grill. Redlands Grill, like our other restaurant groups, remains focused on providing our guests with the highest-quality menu offerings supported by professional service in uniquely designed environments.",
+				"Delicious as usual! Never a disappointment. I read the menu every time and every time I get the same thing because it is so amazing. The drink-a fleur de lis. The appetizer-deviled eggs. The salad-Is a Alex but it's the dressing that makes it a standout, champagne vinaigrette. The main-Filet, it just melts. I take home half my dinner just so I can have dessert-Carrot cake and French press coffee. If you have never been here make a reservation pronto. There is quite a variety to pick from. Sushi sandwiches, even chicken tenders. It is always a nice evening out. My husbands favorite part is the cold bottle of water they bring to the table. He smiles every time they set it down.",
 				"(614) 847-1166", "7550 Vantage Dr\r\n" + "Columbus, OH 43235", "Mon-Thu: 11:00am - 10:00pm",
 				"Fri-Sat: 11:00am - 11:00pm", "Sun: 10:30am - 9:00pm");
 		reviews.put(1L, restaurant1);
@@ -36,10 +36,10 @@ public class ReviewRepository {
 				"Fri-Sat: 11:00am - 2:00am", "Sun: 11:00am - 2:00am");
 		reviews.put(3L, restaurant3);
 
-		Review restaurant4 = new Review(4L, "Outback Steakhouse", "/images/OutbackSteakhouse.jpg", "American",
-				"Outback has been one of favorite for years, but a sign on the door may change that. My ribeye was was cooked perfect to the point that the knife wasn't hardly needed. The salads were large and fresh and the bread was fresh. My problem is a new sign saying no firearms allowed. If this is a store by store decision, I guess I will have to find a new favorite restaurant",
-				"614-755-9926", "6000 E Main St, Columbus, OH 43213", "Mon-Thu: 11:00am – 10:00pm",
-				" Fri-Sat: 11:00am - 11:00pm", "Sun: 11:00am-  9:00pm");
+		Review restaurant4 = new Review(4L, "Bravo Cucina Italiana", "/images/BravoCrosswoods.jpg", "Italian",
+				"Bring your appetite and your zest for life to our BRAVO Cucina Italiana Italian Restaurant at our Crosswoods location, and you can experience your own little slice of Italy right here in Columbus Ohio. Enjoy traditional classics with a twist in an elegant, family-friendly setting that's perfect for any occasion. It's all right here waiting at BRAVO Cucina Italiana, the best Italian Restaurant in Columbus.",
+				"(614) 888-3881", "7470 Vantage Drive\r\n" + "Columbus, OH 43235", "Mon-Thu: 11:30am - 9:30pm",
+				"Fri-Sat: 11:30am - 10:00pm", "Sun: 11:00am - 9:00pm");
 		reviews.put(4L, restaurant4);
 
 		Review restaurant5 = new Review(5L, "Buci Di Bepo", "/images/BuciDiBepo.jpg", "Italian",

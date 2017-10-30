@@ -1,16 +1,13 @@
 /* CSS comments look like this. You can also hit Ctrl+/ in codepen to comment out selected code.
 
 You may want to try commenting out bits below to see how the layout changes. */
-body {
-	background-color: rgb(188, 194, 211);
-	border: solid 2px green;
-}
+
 
 header {
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	border: solid 2px black;
+	border-bottom:  4px solid black;
 }
 
 h1 {
@@ -20,8 +17,45 @@ h1 {
 	font-size: 300%;
 	width: 100%;
 	text-align: center;
-	border: solid 2px blue;
+	
+	
 }
+
+body {
+	background-color: rgb(188, 194, 211);
+}
+
+h2 {
+	grid-area: h2;
+	text-shadow: 2px 2px rgb(188, 194, 211);
+	font-size: 40px;
+	font-family: Georgia;
+	width: 100%;
+	text-align: center;
+	color: black;
+	text-shadow: 2px 2px rgb(188, 194, 211);
+}
+
+#container-all {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: 1fr 1fr;
+	padding: 1;
+	margin: 0px 75px 0px 75px;
+}
+
+.repeatreview{
+	text-align: center;
+}
+
+.repeatimage{
+	width: 80%;
+	height: auto;
+	display: inline-block;
+	padding: 5px;
+	border: solid 2px black;
+}
+
 
 #container-single {
 	display: grid;
@@ -29,83 +63,83 @@ h1 {
 	grid-template-rows: repeat(4, auto) 50px repeat(3, auto);
 	grid-template-areas: 
 	". h2 h2 h2 ." 
-	". ReviewCategory-single ReviewCategory-single ReviewCategory-single ."
-	". PhoneNumber-single . HOOA-single  ." 
-	". Address-single . HOOB-single ." 
-	". . . HOOC-single ."
+	". ReviewCategory-single ReviewCategory-single HOOA-single ."
+	". PhoneNumber-single . HOOB-single ." 
+	". Address-single . HOOC-single ." 
+	". . . . ."
 	". Content-single Content-single Content-single ." 
 	". Image-single Image-single Image-single ." 
 	". . GoHome-single . .";
-	border: solid 2px yellow;
-}
-
-#container-all {
-	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-columns: auto 400px;
-	padding: 1;
-	border: solid 2px red;
-}
-
-h2 {
-	grid-area: h2;
-	text-shadow: 2px 2px rgb(188, 194, 211);
-	font-size: 50px;
-	width: 100%;
-	text-align: center;
-	color: black;
-	border: solid 2px pink;
-	text-shadow: 2px 2px rgb(188, 194, 211);
 }
 
 #ReviewCategory-single {
 	grid-area: ReviewCategory-single;
-	border: solid 2px white;
+	font-family: Georgia;
 }
 
 #PhoneNumber-single {
 	grid-area: PhoneNumber-single;
-	border: solid 2px grey;
+	font-family: Georgia;
 }
 
 #Address-single {
 	grid-area: Address-single;
-	border: solid 2px orange;
+	font-family: Georgia;
 }
 
 #HOOA-single {
 	grid-area: HOOA-single;
-	border: solid 2px #80ff80;
+	font-family: Georgia;
 }
 
 #HOOB-single {
 	grid-area: HOOB-single;
-	border: solid 2px #e798e4;
+	font-family: Georgia;
 }
 #HOOC-single {
 	grid-area: HOOC-single;
-	border: solid 2px brown;
+	font-family: Georgia;
 }
 
 #Content-single {
 	grid-area: Content-single;
-	border: solid 2px red;
+	font-family: Georgia;
 }
 
 #Image-single {
 	width: 80%;
 	hight: auto;
 	grid-area: Image-single;
-	border: solid 2px #ff0080;
-	grid-area: Image-single;
+	padding: 5px;
+	margin: 20px;
+	border: solid 2px black;
 	justify-self: center;
 }
 
 #GoHome-single {
 	grid-area: GoHome-single;
-	border: solid 2px #408080;
+	text-align: center;
 }
 
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: gray;
+	text-decoration: underline;
+}
+
+a:active{
+	color: white;
+	text-decoration: underline;
+}
 footer {
 	text-align: center;
 }

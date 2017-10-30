@@ -25,8 +25,8 @@
 		<div id="ReviewCategory-single"
 			th:text="${modelRestaurant.getReviewCategory() + ' Restaurant'}"></div>
 		<div id="PhoneNumber-single"
-			th:text="${modelRestaurant.getPhoneNumber()}"></div>
-		<div id="Address-single" th:text="${modelRestaurant.getAddress()}"></div>
+			th:text="'Phone #: ' + ${modelRestaurant.getPhoneNumber()}"></div>
+		<div id="Address-single" th:text="'Address: ' + ${modelRestaurant.getAddress()}"></div>
 		<div id="HOOA-single"
 			th:text="${modelRestaurant.getHoursOfOperationA()}"></div>
 		<div id="HOOB-single"
